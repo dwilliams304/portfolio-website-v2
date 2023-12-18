@@ -9,6 +9,8 @@ export default function Projects(){
                     <span>Tech Used</span>
                 </div>
                 <p>Project details!</p>
+                <button>GitHub</button>
+                <button>Demo</button>
             </div>
         </section>
     )
