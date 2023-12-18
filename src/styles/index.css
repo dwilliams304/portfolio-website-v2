@@ -13,10 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 
   --primaryColor: #191919;
-  --secondaryColor: #F15025;
+  --secondaryColor: #00ffb3;
   --tertiaryColor: #919191;
   --tertiaryLighter: #E6E8E6;
-  --textColor: #FFFFFF;
 }
 
 html{
@@ -29,6 +28,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: var(--tertiaryColor);
+  color: var(--secondaryColor);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -39,7 +39,6 @@ nav {
   text-align: center;
   align-items: center;
   background-color: var(--primaryColor);
-  color: var(--textColor);
   border-bottom: 1px solid var(--secondaryColor);
 }
 
@@ -52,5 +51,12 @@ nav a {
   margin: 0 1rem;
   text-decoration: none;
   font-size: 18px;
-  color: var(--textColor)
+  color: var(--secondaryColor);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primaryColor);
+  border-top: 1px solid var(--secondaryColor);
 }
