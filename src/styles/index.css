@@ -75,35 +75,14 @@ nav a:hover{
   margin: 2rem auto;
 }
 
-.contact form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contact form input{
-  padding: 1rem;
-  margin: 0.5rem;
-  width: 400px;
-  border-radius: 25px;
-  border: 1px solid var(--secondaryColor);
-  background-color: var(--primaryColor);
-}
-.contact form button{
-  background-color: var(--primaryColor);
-  border: 1px solid var(--secondaryColor);
-  color: var(--secondaryColor);
-  border-radius: 25px;
-  margin-top: 2rem;
+button {
   padding: 1rem 3rem;
-  transition: all 0.2s ease-in-out;
+  background-color: var(--primaryColor);
+  border: 1px solid var(--secondaryColor);
+  border-radius: 10px;
+
+  color: var(--secondaryColor);
 }
-.contact form button:hover{
-  cursor: pointer;
-  background-color: var(--secondaryColor);
-  border: 1px solid none;
-  color: var(--primaryColor);
-} 
 
 span.highlight{
   color: var(--secondaryColor);

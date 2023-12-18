@@ -1,0 +1,28 @@
+.scrolling-container {
+    display: flex;
+}
+
+div.project {
+    border: 1px solid var(--secondaryColor);
+    border-radius: 10px;
+
+    margin: 0 1rem;
+
+    padding: 3rem 2rem;
+
+    width: 350px;
+    text-wrap: wrap;
+}
+
+div.project button {
+    margin: 0 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--primaryColor);
+    border: 1px solid var(--secondaryColor);
+    border-radius: 10px;
+
+    color: var(--secondaryColor);
+}
+div.project button:hover{
+    cursor: pointer;
+}

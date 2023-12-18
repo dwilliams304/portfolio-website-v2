@@ -1,0 +1,37 @@
+.contact form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact form input,
+textarea{
+  padding: 1rem;
+  width: 400px;
+  margin: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--secondaryColor);
+  background-color: var(--primaryColor);
+  text-align: left;
+}
+
+textarea{
+  height: 200px;
+  resize: none;
+}
+.contact form button{
+  background-color: var(--primaryColor);
+  border: 1px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  transition: all 0.2s ease-in-out;
+}
+.contact form button:hover{
+  cursor: pointer;
+  background-color: var(--secondaryColor);
+  border: 1px solid none;
+  color: var(--primaryColor);
+} 
