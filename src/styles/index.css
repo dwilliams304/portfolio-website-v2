@@ -35,6 +35,7 @@ html, body {
 nav {
   display: flex;
   position: sticky;
+  top: 0;
   justify-content: end;
   text-align: center;
   align-items: center;
