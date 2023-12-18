@@ -12,6 +12,12 @@ div.project {
 
     width: 350px;
     text-wrap: wrap;
+
+    transition: all 0.2s ease-in-out;
+}
+div.project:hover{
+    background-color: var(--primaryLighterColor);
+    scale: 1.05;
 }
 
 div.project button {
@@ -22,7 +28,11 @@ div.project button {
     border-radius: 10px;
 
     color: var(--secondaryColor);
+
+    transition: all 0.2s ease-in-out;
 }
 div.project button:hover{
-    cursor: pointer;
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+
 }
