@@ -30,6 +30,8 @@ export default function Projects(){
                     <button>GitHub</button>
                     <button>Demo</button>
                 </div>
+
+                
             </div>
         </section>
     )
