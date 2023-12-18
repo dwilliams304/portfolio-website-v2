@@ -1,7 +1,7 @@
 export default function Projects(){
     return(
         <section className="projects" id="projects">
-            <h2>Portfolio</h2>
+            <h2>My <span className="highlight">Projects</span></h2>
             <div className="project">
                 <h4>Project Name</h4>
                 <img src="" alt="Project thumb"/>
