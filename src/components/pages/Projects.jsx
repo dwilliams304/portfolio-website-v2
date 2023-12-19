@@ -27,8 +27,8 @@ export default function Projects(){
                         <span>Unity</span>
                     </div>
                     <p>Neon Rain is a 2D top-down shooter game made within the Unity Engine.</p>
-                    <button>GitHub</button>
-                    <button>Demo</button>
+                    <button><span>GitHub</span></button>
+                    <button><span>Demo</span></button>
                 </div>
 
                 

@@ -94,12 +94,12 @@ button {
   background-color: var(--primaryColor);
   border: 1px solid var(--secondaryColor);
   border-radius: 10px;
+  cursor: pointer;
 
   color: var(--secondaryColor);
   transition: all 0.4s ease-out;
 }
 button:hover{
-  cursor: pointer;
   background-color: var(--secondaryColor);
   color: var(--primaryColor);
   border: 1px solid none;

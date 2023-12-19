@@ -25,7 +25,7 @@ div.project:hover{
 div.project button {
     margin: 0 1rem;
     padding: 1rem 3rem;
-    background-color: var(--primaryColor);
+    background-color: var(--primaryColor);  
     border: 1px solid var(--secondaryColor);
     border-radius: 10px;
 
