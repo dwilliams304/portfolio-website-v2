@@ -1,0 +1,21 @@
+div.details{
+    display: flex;
+}
+
+div.details div {
+    text-align: left;
+    margin-right: 2rem;
+}
+
+div.details img {
+    border-radius: 50%;
+}
+
+.tech{
+    display: flex;
+    text-align: left;
+}
+
+.tech p {
+    margin-right: 1rem;
+}

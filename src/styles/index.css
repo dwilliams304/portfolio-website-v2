@@ -80,7 +80,7 @@ nav a:hover{
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 3rem auto;
+  margin: 0 auto 10rem auto;
 }
 
 .wrapper section h2{
