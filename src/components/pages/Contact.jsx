@@ -17,7 +17,7 @@ export default function Contact(){
         const { name, value } = e.target;
         setFormValues({
             ...formValues,
-            [e.target.name]: e.target.value,
+            [name]: value,
         })
     }
 
