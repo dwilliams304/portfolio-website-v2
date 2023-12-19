@@ -28,9 +28,13 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: var(--primaryColor);
+  background: linear-gradient(-45deg, #00383a, #1b3821);
+  background-size: 4000% 4000%;
+  animation: gradient 15s ease infinite;
   color: var(--textColor);
   font-family: 'Montserrat', sans-serif;
+
+  animation: 15s infinite alternate background;
 }
 
 nav {
@@ -41,8 +45,10 @@ nav {
   justify-content: end;
   text-align: center;
   align-items: center;
-  background-color: var(--primaryColor);
-  border-bottom: 1px solid var(--secondaryColor);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.651), #ffffff00);
+  
+  /* background-color: var(--primaryColor); */
+  /* border-bottom: 1px solid var(--secondaryColor); */
 }
 
 nav h1 {
@@ -116,4 +122,16 @@ footer button {
   padding: 0.5rem;
   margin: 1rem;
   height: 50px;
+}
+
+@keyframes background{
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }

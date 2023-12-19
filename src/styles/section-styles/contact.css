@@ -3,6 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  padding: 2rem 4rem;
+  /* border: 1px solid black; */
+
+  box-shadow: 10px 5px 50px var(--primaryColor);
 }
 
 .contact form input,

@@ -3,8 +3,10 @@
 }
 
 div.project {
-    border: 1px solid var(--secondaryColor);
-    border-radius: 10px;
+    background-color: var(--primaryColor);
+    box-shadow: 10px 5px 20px var(--primaryColor);
+    /* border: 1px solid var(--secondaryColor); */
+    /* border-radius: 10px; */
 
     margin: 0 1rem;
 

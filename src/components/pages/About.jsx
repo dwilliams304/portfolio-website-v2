@@ -7,8 +7,7 @@ export default function About(){
             <p>I am a Fullstack Web Developer with a strong foundation in customer 
                 service and a passion for creating user-centric web applications. Currently, I am 
                 proficient in using JavaScript, ReactJS, and C#. 
-            </p>
-            <p>This website is designed to show off all projects I have worked on and is also to
+                This website is designed to show off all projects I have worked on and is also to
                 help showcase some of my skills with designing, programming,  and anything else
                 related to web development!
             </p>
