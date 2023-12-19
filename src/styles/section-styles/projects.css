@@ -1,5 +1,6 @@
 div.carousel {
     display: flex;
+    width: 100%;
 }
 
 div.card {
