@@ -1,12 +1,10 @@
-.scrolling-container {
+div.carousel {
     display: flex;
 }
 
-div.project {
+div.card {
     background-color: var(--primaryColor);
     box-shadow: 10px 5px 20px var(--primaryColor);
-    /* border: 1px solid var(--secondaryColor); */
-    /* border-radius: 10px; */
 
     margin: 0 1rem;
 
@@ -17,12 +15,12 @@ div.project {
 
     transition: all 0.2s ease-in-out;
 }
-div.project:hover{
+div.card:hover{
     background-color: var(--primaryLighterColor);
     scale: 1.05;
 }
 
-div.project button {
+div.card button {
     margin: 0 1rem;
     padding: 1rem 3rem;
     background-color: var(--primaryColor);  
@@ -33,7 +31,7 @@ div.project button {
 
     transition: all 0.2s ease-in-out;
 }
-div.project button:hover{
+div.card button:hover{
     background-color: var(--secondaryColor);
     color: var(--primaryColor);
 
