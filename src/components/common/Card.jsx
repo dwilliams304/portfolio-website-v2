@@ -1,10 +1,10 @@
 /* eslint-disable */
 
-export default function Card({ data }){ //eslint-disable-line
+export default function Card({ data, position }){ //eslint-disable-line
     return(
-        <div className="card">
-            <h4>{data.name}</h4>
+        <div className={`card ${position}`}>
             <img src={data.img} alt="Project thumb"/>
+            <h4>{data.name}</h4>
             <div>
                 <p>Tech Used</p>
                 {
@@ -14,8 +14,8 @@ export default function Card({ data }){ //eslint-disable-line
                 }
             </div>
             <p>{data.description}</p>
-            <button>GitHub</button>
-            <button>Demo</button>
+            <button className="btn-fancy">GitHub</button>
+            <button className="btn-fancy">Demo</button>
         </div>
     )
 }

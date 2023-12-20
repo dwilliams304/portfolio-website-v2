@@ -64,17 +64,17 @@ nav a {
   transition: all 0.2s ease-in-out;
 }
 
-nav a:hover{
+nav a:hover {
   color: var(--secondaryColor);
 }
 
-.wrapper{
+.wrapper {
   display: block;
   margin: 2rem 0;
   width: 100%;
 }
 
-.wrapper section{
+.wrapper section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,31 +83,69 @@ nav a:hover{
   margin: 0 auto 10rem auto;
 }
 
-.wrapper section h2{
+.wrapper section h2 {
   text-transform: uppercase;
   font-size: 18px;
   border-bottom: 1px solid var(--secondaryColor);
 }
 
-button {
+.btn-fancy {
+  margin: 1rem;
+
+  position: relative;
+  z-index: 1;
   padding: 1rem 3rem;
   background-color: var(--primaryColor);
   border: 1px solid var(--secondaryColor);
-  border-radius: 10px;
   cursor: pointer;
 
-  color: var(--secondaryColor);
-  transition: all 0.4s ease-out;
+  transition: color 0.4s ease;
 }
-button:hover{
-  background-color: var(--secondaryColor);
+.btn-fancy:hover{
   color: var(--primaryColor);
-  border: 1px solid none;
-  scale: 1.1;
+}
+.btn-fancy::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondaryColor);
+
+  transform-origin: left;
+  transform: scaleX(0);
+
+  transition: transform 0.4s ease;
 }
 
-span.highlight{
+.btn-fancy:hover::before{
+  transform: scaleX(100%);
+}
+
+span.highlight {
   color: var(--secondaryColor);
+}
+
+
+.fancy-underline{
+  position: relative;
+}
+.fancy-underline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid var(--secondaryColor);
+  transform: scaleX(0);
+
+  transition: transform 0.2s ease-in-out;
+}
+.fancy-underline:hover::before {
+  transform: scaleX(100%);
 }
 
 footer {

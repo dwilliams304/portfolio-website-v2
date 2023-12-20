@@ -6,10 +6,10 @@ export default function NavBar(){
             <h1>daviswilliams.dev</h1>
 
 
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a className="fancy-underline" href="#home">Home</a>
+            <a className="fancy-underline" href="#about">About</a>
+            <a className="fancy-underline" href="#projects">Projects</a>
+            <a className="fancy-underline" href="#contact">Contact</a>
         </nav>
     )
 }
