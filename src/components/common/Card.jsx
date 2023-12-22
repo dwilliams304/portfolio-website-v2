@@ -4,7 +4,6 @@ import { iconMap } from "../../data/iconMap"
 
 export default function Card(props){ //eslint-disable-line
     const { data, position } = props;
-    console.log("DATA PIECE: ", data);
 
     const openInNewWindow = (link) => {
         window.open(link);

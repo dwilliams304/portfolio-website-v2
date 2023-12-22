@@ -1,17 +1,19 @@
 /* eslint-disable */
 import "../../styles/section-styles/contact.css"
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const initialValues = {
-    form_name: "",
-    form_email: "",
-    form_phone: "",
-    form_subject: "",
-    form_additional: ""
+    user_name: "",
+    user_email: "",
+    user_phone: "",
+    user_subject: "",
+    message: ""
 }
 
 export default function Contact(){
     const [formValues, setFormValues] = useState(initialValues);
+    const form = useRef();
 
     const handleChange = e => {
         const { name, value } = e.target;
@@ -23,38 +25,45 @@ export default function Contact(){
 
     const handleSubmit = e => {
         e.preventDefault();
+
+        emailjs.sendForm(import.meta.env.VITE_EMAIL_ID, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_PUBLIC_KEY)
+            .then(res => {
+                setFormValues(initialValues);
+            })
+            .catch(err => console.log(err.text));
+
     }
     return(
         <section className="contact" id="contact">
             <h2>Let's <span className="highlight">Connect!</span></h2>
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit}>
                 <input 
                     type="text" 
-                    name="form_name"
-                    value={formValues.form_name}
+                    name="user_name"
+                    value={formValues.user_name}
                     onChange={handleChange}
                     placeholder="Full Name" />
                 <input 
                     type="email" 
-                    name="form_email"
-                    value={formValues.form_email}
+                    name="user_email"
+                    value={formValues.user_email}
                     onChange={handleChange}
                     placeholder="Email Address" />
                 <input 
                     type="tel" 
-                    name="form_phone"
-                    value={formValues.form_phone}
+                    name="user_phone"
+                    value={formValues.user_phone}
                     onChange={handleChange}
                     placeholder="Phone # - (123) 456-7890" />
                 <input 
                     type="text" 
-                    name="form_subject"
-                    value={formValues.form_subject}
+                    name="user_subject"
+                    value={formValues.user_subject}
                     onChange={handleChange}
                     placeholder="Subject" />
                 <textarea 
-                    name="form_additional"
-                    value={formValues.form_additional}
+                    name="message"
+                    value={formValues.message}
                     onChange={handleChange}
                     placeholder="Additional details" />
                 <button type="submit">Send!</button>
