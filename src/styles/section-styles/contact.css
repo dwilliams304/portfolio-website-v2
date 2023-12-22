@@ -40,4 +40,15 @@ textarea{
   background-color: var(--secondaryColor);
   border: 1px solid none;
   color: var(--primaryColor);
-} 
+}
+
+.contact form .btn-disabled {
+  border-color: gray;
+  color: gray;
+}
+
+.contact form .btn-disabled:hover {
+  background-color: var(--primaryColor);
+  color: gray;
+  cursor: not-allowed;
+}

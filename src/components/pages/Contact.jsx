@@ -2,6 +2,7 @@
 import "../../styles/section-styles/contact.css"
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const initialValues = {
     user_name: "",
@@ -14,6 +15,7 @@ const initialValues = {
 export default function Contact(){
     const [formValues, setFormValues] = useState(initialValues);
     const form = useRef();
+    const recaptcha = useRef();
 
     const handleChange = e => {
         const { name, value } = e.target;
@@ -25,13 +27,11 @@ export default function Contact(){
 
     const handleSubmit = e => {
         e.preventDefault();
-
         emailjs.sendForm(import.meta.env.VITE_EMAIL_ID, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_PUBLIC_KEY)
             .then(res => {
                 setFormValues(initialValues);
             })
             .catch(err => console.log(err.text));
-
     }
     return(
         <section className="contact" id="contact">
@@ -52,9 +52,10 @@ export default function Contact(){
                 <input 
                     type="tel" 
                     name="user_phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     value={formValues.user_phone}
                     onChange={handleChange}
-                    placeholder="Phone # - (123) 456-7890" />
+                    placeholder="Phone # - ex. 123-456-7890" />
                 <input 
                     type="text" 
                     name="user_subject"
@@ -66,6 +67,7 @@ export default function Contact(){
                     value={formValues.message}
                     onChange={handleChange}
                     placeholder="Additional details" />
+                <ReCAPTCHA ref={recaptcha} sitekey={import.meta.env.VITE_SITE_KEY} />
                 <button type="submit">Send!</button>
             </form>
         </section>
