@@ -40,6 +40,18 @@
     transition: all 0.4s ease-in-out;
 }
 
+.btn-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-container .no-link {
+    font-size: 12px;
+}
+
 
 
 .card .bottom-face{

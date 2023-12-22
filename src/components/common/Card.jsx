@@ -2,17 +2,34 @@
 
 import { iconMap } from "../../data/iconMap"
 
-export default function Card({ data, position }){ //eslint-disable-line
+export default function Card(props){ //eslint-disable-line
+    const { data, position } = props;
+    console.log("DATA PIECE: ", data);
+
+    const openInNewWindow = (link) => {
+        window.open(link);
+    }
     return(
         <div className={`card ${position}`}>
             <div className="top-face">
                 <div className="content">
-                    <img className="thumbnail" src={data.img} alt="Project thumb"/>
-                    <h4>{data.name}</h4>
-                    <p>{data.description}</p>
+                    <img className="thumbnail" src={data.project_img} alt="Project thumb"/>
+                    <h4>{data.project_name}</h4>
+                    <p>{data.project_description}</p>
                     <div className="btn-container">
-                        <button className="btn-fancy">GitHub</button>
-                        <button className="btn-fancy">Demo</button>
+                        {
+                            data.links[0] ? 
+                                <button className="btn-fancy" onClick={() => openInNewWindow(data.links[0])}>Demo</button>
+                                :
+                                <p className="no-link">(no demo, sorry)</p>
+
+                        }
+                        {
+                            data.links[1] ? 
+                                <button className="btn-fancy" onClick={() => openInNewWindow(data.links[1])}>GitHub</button>
+                                :
+                                <p className="no-link">(private github, sorry)</p>
+                        }
                     </div>
                 </div>
             </div>
@@ -21,13 +38,13 @@ export default function Card({ data, position }){ //eslint-disable-line
                 <div className="content">
                     <div className="tech">
                         {
-                            data.tech.map((tech, idx) => {
+                            data.tech_used.map((tech, idx) => {
                                 return <span key={idx}>{iconMap[tech]}</span>
                             })
                         }
                     </div>
-                    <p>Started: 12/20/2023</p>
-                    <p>Status: Ongoing</p>
+                    <p>Started: {data.date_started}</p>
+                    <p>Status: {data.status}</p>
                 </div>
             </div>
         </div>
