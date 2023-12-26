@@ -25,6 +25,7 @@ textarea{
   height: 200px;
   resize: none;
 }
+
 .contact form button{
   background-color: var(--primaryColor);
   border: 1px solid var(--secondaryColor);
@@ -51,4 +52,17 @@ textarea{
   background-color: var(--primaryColor);
   color: gray;
   cursor: not-allowed;
+}
+
+span.error {
+  color: rgb(255, 54, 54);
+}
+
+span.success {
+  color: var(--secondaryColor);
+  margin-top: 1rem;
+}
+
+.captcha {
+  margin-top: 1rem;
 }

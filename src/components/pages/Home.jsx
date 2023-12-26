@@ -14,7 +14,7 @@ export default function Home(){
                 </div>
                 <img className="img-coin" src="https://media.licdn.com/dms/image/D5603AQHEj5uIBI3Qdg/profile-displayphoto-shrink_200_200/0/1693500191424?e=1707350400&v=beta&t=i3MSpn-IkIRI_msHHWiBAy8cagf6-05_d4_sZxbaBg0" alt="headshot"/>
             </div>
-            <h3>Here are some of my <span className="highlight">skills:</span></h3>
+            <h2>My <span className="highlight">skills:</span></h2>
             <div className="tech">
                 <p>JS</p>
                 <p>C#</p>
