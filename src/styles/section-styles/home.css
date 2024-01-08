@@ -20,6 +20,7 @@ div.details img {
 .tech .skills {
     margin: 1rem;
     padding: 1rem 3rem;
+    width: 125px;
     background-color: var(--primaryColor);
 }
 

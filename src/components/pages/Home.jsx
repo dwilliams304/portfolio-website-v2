@@ -20,6 +20,11 @@ export default function Home(){
         "Express",
     ]
 
+    const other = [
+        "Unity",
+        "Unreal"
+    ]
+
     return(
         <section className="home" id="home">
             <h2>My name is <span className="highlight">Davis</span></h2>
@@ -59,6 +64,17 @@ export default function Home(){
                     <div>
                         {
                             be.map((key, i) => {
+                                return <span key={i}>{iconMap[key]}</span>
+                            })
+                        }
+                    </div>
+                </div>
+
+                <div className="skills">
+                    <h3><span className="highlight">Other</span></h3>
+                    <div>
+                        {
+                            other.map((key, i) => {
                                 return <span key={i}>{iconMap[key]}</span>
                             })
                         }
