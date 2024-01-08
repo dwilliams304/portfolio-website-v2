@@ -3,17 +3,10 @@ import "../../styles/section-styles/home.css";
 import { iconMap } from "../../data/iconMap";
 
 export default function Home(){
-    const tech = [
-        "JavaScript",
-        "C#",
-        "Unity",
-        "Unreal"
-    ]
-
     const lang = [
         "JavaScript",
         "C#",
-        "Python"
+        "Python",
     ]
 
     const fe = [
@@ -23,8 +16,8 @@ export default function Home(){
 
 
     const be = [
+        "Node",
         "Express",
-        "Node"
     ]
 
     return(
@@ -40,7 +33,7 @@ export default function Home(){
             <h2>My <span className="highlight">skills:</span></h2>
             <div className="tech">
                 <div className="skills">
-                    <h3>Languages</h3>
+                    <h3><span className="highlight">Languages</span></h3>
                     <div>
                         {
                             lang.map((key, i) => {
@@ -51,7 +44,7 @@ export default function Home(){
                 </div>
 
                 <div className="skills">
-                    <h3>Frontend</h3>
+                    <h3><span className="highlight">Frontend</span></h3>
                     <div>
                         {
                             fe.map((key, i) => {
@@ -62,7 +55,7 @@ export default function Home(){
                 </div>
 
                 <div className="skills">
-                    <h3>Backend</h3>
+                    <h3><span className="highlight">Backend</span></h3>
                     <div>
                         {
                             be.map((key, i) => {

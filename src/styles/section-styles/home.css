@@ -15,9 +15,25 @@ div.details img {
     
 .tech{
     display: flex;
-    text-align: left;
 }
 
-.tech p {
-    margin-right: 1rem;
+.tech .skills {
+    margin: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--primaryColor);
+}
+
+.tech .skills h3 {
+    font-weight: 200;
+    /* border-bottom: 1px solid var(--secondaryColor); */
+    margin-bottom: 2rem;
+}
+
+.tech .skills div {
+    display: flex;
+    flex-direction: column;
+}
+
+.tech .skills div span {
+    margin-bottom: 1rem;
 }
