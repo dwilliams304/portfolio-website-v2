@@ -5,6 +5,7 @@ import { iconMap } from "../../data/iconMap";
 export default function Home(){
     const lang = [
         "JavaScript",
+        "TypeScript",
         "C#",
         "Python",
     ]
@@ -12,17 +13,30 @@ export default function Home(){
     const fe = [
         "React",
         "Redux",
+        "HTML",
+        "CSS",
     ]
 
 
     const be = [
         "Node",
         "Express",
+        ".NET",
+        "AWS",
+    ]
+
+    const db = [
+        "MongoDB",
+        "MySQL",
+        "SQLite",
+        "PostgreSQL",
     ]
 
     const other = [
+        "Git",
         "Unity",
-        "Unreal"
+        "Unreal",
+        "Godot"
     ]
 
     return(
@@ -64,6 +78,17 @@ export default function Home(){
                     <div>
                         {
                             be.map((key, i) => {
+                                return <span key={i}>{iconMap[key]}</span>
+                            })
+                        }
+                    </div>
+                </div>
+
+                <div className="skills">
+                    <h3><span className="highlight">Databases</span></h3>
+                    <div>
+                        {
+                            db.map((key, i) => {
                                 return <span key={i}>{iconMap[key]}</span>
                             })
                         }
