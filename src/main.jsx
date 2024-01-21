@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 
 import NavBar from './components/layout/NavBar';
-import Footer from './components/layout/Footer';
 
 import Home from './components/pages/Home';
 import About from './components/pages/About';
@@ -30,7 +29,6 @@ function App() {
         <Contact />
       </div>
 
-      <Footer />
     </>
   )
 }

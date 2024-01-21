@@ -159,11 +159,12 @@ footer {
   border-top: 1px solid var(--secondaryColor);
 }
 
-footer button {
-  padding: 0.5rem;
-  margin: 1rem;
+/* footer .icon {
   height: 50px;
-}
+  width: 50px;
+  padding: 1rem;
+  margin: 0 2rem;
+} */
 
 @keyframes background{
   0% {

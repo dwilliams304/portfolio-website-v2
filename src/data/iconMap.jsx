@@ -1,3 +1,6 @@
+import GitHub from "../assets/icons/github.svg";
+import LinkedIn from "../assets/icons/linkedin.svg";
+
 export const iconMap = {
     //Languages
     "JavaScript": <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>,
@@ -37,8 +40,8 @@ export const iconMap = {
     "Git": <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>,
 
     //Web Icons
-    "LinkedIn": <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/linkedin/linkedin-plain.svg" alt="linkedin" width="40" height="40" />,
-    "GitHub": <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/github/github-original.svg" alt="github" width="40" height="40" />,
+    "LinkedIn": <img src={LinkedIn} alt="linkedin" width="50" height="50"/>,
+    "GitHub": <img src={GitHub} alt="github" width="50" height="50"/>,
 }
 
 // This file is to help me use icons based off of a string, using FontAwesome icons where applicable

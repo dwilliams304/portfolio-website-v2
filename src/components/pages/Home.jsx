@@ -13,10 +13,9 @@ export default function Home(){
     const fe = [
         "React",
         "Redux",
-        "HTML",
         "CSS",
+        "Tailwind",
     ]
-
 
     const be = [
         "Node",
