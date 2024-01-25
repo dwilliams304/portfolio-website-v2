@@ -6,6 +6,7 @@
 
   padding: 2rem 4rem;
   /* border: 1px solid black; */
+  margin-bottom: 3rem;
 
   box-shadow: 10px 5px 50px var(--primaryColor);
 }
