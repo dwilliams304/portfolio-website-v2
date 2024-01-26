@@ -44,7 +44,9 @@ export default function Home(){
             <div className="details">
                 <div>
                     <h4>I'm a Fullstack Developer based out of Tucson, AZ.</h4>
-                    <p>Here is some more information that I could put here.</p>
+                    <p>Welcome to my portfolio! Here you can view some information about me, as well as information about some of the projects I've worked on.
+                        Want to connect? Send an email!
+                    </p>
                 </div>
                 <img className="img-coin" src="https://media.licdn.com/dms/image/D5603AQHEj5uIBI3Qdg/profile-displayphoto-shrink_200_200/0/1693500191424?e=1707350400&v=beta&t=i3MSpn-IkIRI_msHHWiBAy8cagf6-05_d4_sZxbaBg0" alt="headshot"/>
             </div>
