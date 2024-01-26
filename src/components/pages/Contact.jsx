@@ -118,7 +118,7 @@ export default function Contact(){
                     name="message"
                     value={formValues.message}
                     onChange={handleChange}
-                    placeholder="Additional details" 
+                    placeholder="Additional details. (min 10 chars)" 
                     maxLength={500}
                 />
                 {errors.message && <span className="error">{errors.message}</span>}
@@ -127,7 +127,7 @@ export default function Contact(){
                 <ReCAPTCHA ref={recaptcha} sitekey={import.meta.env.VITE_SITE_KEY} className="captcha" />
                 {errors.captcha && <span className="error">{errors.captcha}</span>}
 
-                <button type="submit">Send!</button>
+                <button type="submit" className="btn-fancy">Send!</button>
                 {success && <span className="success">Message successfully sent!</span>}
             </form>
         </section>
