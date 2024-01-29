@@ -2,13 +2,17 @@
     overflow: wrap;
 }
 
+.carousel-container {
+    max-width: 100%;
+}
+
 .carousel {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
     padding-bottom: 200px;
     justify-content: space-around;
-    width: 100%;
+    max-width: 100%;
 }
 
 .card {
@@ -89,4 +93,11 @@
 .card:hover .bottom-face,
 .card:focus .bottom-face {
     transform: translateY(0px);
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    
 }

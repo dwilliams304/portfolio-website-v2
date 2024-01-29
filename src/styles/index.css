@@ -17,6 +17,11 @@
   --tertiaryLighter: #E6E8E6;
 
   --textColor: #ffffff;
+
+
+  --mobileBP: 480px;
+  --tabletBP: 768px;
+  --laptopBP: 1024px;
 }
 
 html{
@@ -40,6 +45,7 @@ html, body {
 nav {
   display: flex;
   position: sticky;
+  width: 100%;
   top: 0;
   z-index: 50;
   justify-content: end;
@@ -188,3 +194,18 @@ footer {
       background-position: 0% 50%;
   }
 }
+
+
+
+@media only screen and (max-width: var(--laptopBP)) {
+
+}
+
+@media only screen and (max-width: var(--tabletBP)) {
+
+}
+
+@media only screen and (max-width: var(--mobileBP)) {
+
+}
+

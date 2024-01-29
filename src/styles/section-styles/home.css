@@ -1,6 +1,10 @@
+section.home {
+    max-width: 100%;
+}
 div.details{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 div.details div {
@@ -23,12 +27,15 @@ div.details img:hover {
     
 .tech{
     display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
 }
 
 .tech .skills {
-    margin: 1rem;
     padding: 1rem 3rem;
-    width: 125px;
+    margin: 1rem;
+    max-width: 15%;
     background-color: var(--primaryColor);
 }
 
@@ -76,5 +83,35 @@ div.details img:hover {
     }
     100%{
         transform: rotateY(0);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    section div.details {
+        justify-content: space-around;
+    }
+
+    section div.details div {
+        width: 50%;
+    }
+    
+    .tech .skills {
+        margin: 0;
+        max-width: 15%;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section div.details {
+        justify-content: space-around;
+    }
+
+    section div.details div {
+        width: 50%;
+    }
+
+    .tech .skills {
+        padding: 1rem;
     }
 }
