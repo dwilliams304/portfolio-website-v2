@@ -69,3 +69,13 @@ span.success {
 .captcha {
   margin-top: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+    section.contact form {
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      box-shadow: none;
+    }
+}
