@@ -1,35 +1,48 @@
 .carousel {
+    max-width: 100%;
+
     display: grid;
+    gap: 1rem;
     grid-auto-flow: column;
     grid-auto-columns: 25%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
 
-    padding-bottom: 200px;
-    justify-content: space-around;
-    min-width: 100%;
+    padding-bottom: 125px;
+    margin: 0 1rem;
 
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondaryColor) var(--primaryColor);
+
 }
-.carousel::-webkit-scrollbar { 
-    display: none;
+
+.carousel::-webkit-scrollbar {
+    height: 5px;
+    background-color: white;
+}
+.carousel::-webkit-scrollbar-track {
+    background: var(--primaryColor);
+    
+}
+.carousel::-webkit-scrollbar-thumb {
+    background-color: var(--secondaryColor);
 }
 
 .card {
+    scroll-snap-align: start;
     position: relative;
     z-index: 1;
     background-color: var(--primaryColor);
     box-shadow: 10px 5px 20px var(--primaryColor);
 
-    margin: 1rem;
-
     padding: 3rem 2rem;
 
-    min-width: 300px;
+    /* min-width: 30%; */
     min-height: 400px;
-    height: 55vh;
+    height: 50vh;
     text-wrap: wrap;
 
     transition: all 0.2s ease-in-out;
@@ -101,6 +114,18 @@
 
 
 
-@media only screen and (max-width: 1024px) {
-    
+@media only screen and (max-width: 1300px) {
+    .carousel {
+        grid-auto-columns: 34%;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .carousel {
+        grid-auto-columns: 52%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .carousel {
+        grid-auto-columns: 88%;
+    }
 }
