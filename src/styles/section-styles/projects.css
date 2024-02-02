@@ -9,10 +9,16 @@
 .carousel {
     display: flex;
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow-x: scroll;
     padding-bottom: 200px;
     justify-content: space-around;
     max-width: 100%;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar { 
+    display: none;
 }
 
 .card {
