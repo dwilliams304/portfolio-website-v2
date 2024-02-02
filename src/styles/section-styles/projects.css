@@ -1,3 +1,6 @@
+.projects > h4 {
+    font-weight: 300;
+}
 .carousel {
     max-width: 100%;
 
