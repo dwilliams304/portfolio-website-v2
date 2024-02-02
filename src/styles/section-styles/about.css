@@ -27,8 +27,7 @@ div.content-container div img {
 
 @media only screen and (max-width: 1024px) {
     .about .content-container {
-        width: 100%;
-        margin: 0;
+        margin: 1rem;
     }
 }
 
@@ -37,5 +36,13 @@ div.content-container div img {
         display: none;
         width: 0;
         height: 0;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .about .content-container {
+        width: 98%;
+        margin: 0;
     }
 }
