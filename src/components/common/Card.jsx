@@ -9,7 +9,7 @@ export default function Card(props){ //eslint-disable-line
         window.open(link);
     }
     return(
-        <div className={`card ${position}`}>
+        <div className={`card`}>
             <div className="top-face">
                 <div className="content">
                     <img className="thumbnail" src={data.project_img} alt="Project thumb"/>

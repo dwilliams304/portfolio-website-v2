@@ -26,9 +26,8 @@ export default function Projects(){
     return(
         <section className="projects" id="projects">
             <h2>My <span className="highlight">Projects</span></h2>
-            <div className="carousel-container">
+            <h4>Scroll to see more --&gt;</h4>
                 <CardCarousel cardsData={cardsData} />
-            </div>
         </section>
     )
 }

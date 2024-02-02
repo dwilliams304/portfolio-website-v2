@@ -1,18 +1,14 @@
-.projects{
-    overflow: wrap;
-}
-
-.carousel-container {
-    max-width: 100%;
-}
-
 .carousel {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+
     padding-bottom: 200px;
     justify-content: space-around;
-    max-width: 100%;
+    min-width: 100%;
 
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -31,8 +27,9 @@
 
     padding: 3rem 2rem;
 
-    width: 350px;
-    height: 450px;
+    min-width: 300px;
+    min-height: 400px;
+    height: 55vh;
     text-wrap: wrap;
 
     transition: all 0.2s ease-in-out;

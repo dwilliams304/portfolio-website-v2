@@ -27,4 +27,25 @@ export const data = [
         description: "A React website built to showoff all of my projects.",
         links: ["", ""]
     },
+    {
+        name: "Portfolio Website",
+        img: "https://bwsrltsxndfbxnthgmlt.supabase.co/storage/v1/object/sign/Personal%20Projects/PortfolioWebsite.PNG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQZXJzb25hbCBQcm9qZWN0cy9Qb3J0Zm9saW9XZWJzaXRlLlBORyIsImlhdCI6MTcwMTgxODUwNiwiZXhwIjoxNzMzMzU0NTA2fQ.lkoBnMjc3rCpiGZ2IPYIfGghADF_-h9XFYKNV7-9FJk&t=2023-12-05T23%3A21%3A39.320Z",
+        tech: ["JavaScript", "Node", "React"],
+        description: "A React website built to showoff all of my projects.",
+        links: ["", ""]
+    },
+    {
+        name: "Portfolio Website",
+        img: "https://bwsrltsxndfbxnthgmlt.supabase.co/storage/v1/object/sign/Personal%20Projects/PortfolioWebsite.PNG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQZXJzb25hbCBQcm9qZWN0cy9Qb3J0Zm9saW9XZWJzaXRlLlBORyIsImlhdCI6MTcwMTgxODUwNiwiZXhwIjoxNzMzMzU0NTA2fQ.lkoBnMjc3rCpiGZ2IPYIfGghADF_-h9XFYKNV7-9FJk&t=2023-12-05T23%3A21%3A39.320Z",
+        tech: ["JavaScript", "Node", "React"],
+        description: "A React website built to showoff all of my projects.",
+        links: ["", ""]
+    },
+    {
+        name: "Portfolio Website",
+        img: "https://bwsrltsxndfbxnthgmlt.supabase.co/storage/v1/object/sign/Personal%20Projects/PortfolioWebsite.PNG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQZXJzb25hbCBQcm9qZWN0cy9Qb3J0Zm9saW9XZWJzaXRlLlBORyIsImlhdCI6MTcwMTgxODUwNiwiZXhwIjoxNzMzMzU0NTA2fQ.lkoBnMjc3rCpiGZ2IPYIfGghADF_-h9XFYKNV7-9FJk&t=2023-12-05T23%3A21%3A39.320Z",
+        tech: ["JavaScript", "Node", "React"],
+        description: "A React website built to showoff all of my projects.",
+        links: ["", ""]
+    },
 ]
