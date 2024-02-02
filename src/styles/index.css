@@ -42,6 +42,11 @@ html, body {
   animation: 15s infinite alternate background;
 }
 
+h3 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
 nav {
   display: flex;
   position: sticky;

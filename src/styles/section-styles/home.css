@@ -33,13 +33,14 @@ div.details img:hover {
 }
 
 .tech .skills {
-    padding: 1rem 3rem;
     margin: 1rem;
-    max-width: 15%;
+    min-width: 5%;
+    padding: 1rem 3rem;
     background-color: var(--primaryColor);
 }
 
 .tech .skills h3 {
+    width: 100%;
     font-weight: 200;
     /* border-bottom: 1px solid var(--secondaryColor); */
     margin-bottom: 2rem;
@@ -48,6 +49,7 @@ div.details img:hover {
 .tech .skills div {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
 }
 
 .tech .skills div span {
@@ -96,22 +98,36 @@ div.details img:hover {
     }
     
     .tech .skills {
-        margin: 0;
-        max-width: 15%;
-        padding: 2rem;
+        margin: 2px;
+        padding: 0;
+        width: 20%;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    .tech .skills div {
+        padding: 0.5rem;
+    }
+
     section div.details {
         justify-content: space-around;
     }
 
     section div.details div {
+        margin: 0;
         width: 50%;
     }
 
-    .tech .skills {
-        padding: 1rem;
+    .tech .skills h3 {
+        margin-bottom: 0.5rem;
     }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .tech .skills div {
+        padding: 0;
+    }
+
 }
