@@ -99,7 +99,7 @@ div.details img:hover {
     
     .tech .skills {
         margin: 2px;
-        padding: 0;
+        padding: 2rem 0;
         width: 20%;
     }
 }
@@ -119,7 +119,7 @@ div.details img:hover {
     }
 
     .tech .skills h3 {
-        margin-bottom: 0.5rem;
+        margin-bottom: 2rem;
     }
 
 }
@@ -128,6 +128,10 @@ div.details img:hover {
 @media only screen and (max-width: 480px) {
     .tech .skills div {
         padding: 0;
+    }
+
+    .tech .skills h3 {
+        font-size: 16px;
     }
 
 }
