@@ -71,11 +71,17 @@ span.success {
 }
 
 @media only screen and (max-width: 768px) {
-    section.contact form {
+    .contact form {
       width: 100%;
       max-width: 100%;
       padding: 0;
       margin: 0;
+      box-shadow: none;
+    }
+    section.contact form input,
+    textarea{
+      width: 80%;
+      max-width: 90%;
       box-shadow: none;
     }
 }
