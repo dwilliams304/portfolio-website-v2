@@ -18,10 +18,6 @@
 
   --textColor: #ffffff;
 
-
-  --mobileBP: 480px;
-  --tabletBP: 768px;
-  --laptopBP: 1024px;
 }
 
 html{
@@ -42,6 +38,22 @@ html, body {
   animation: 15s infinite alternate background;
 }
 
+header {
+  z-index: 50;
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  text-align: center;
+  align-items: center;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.651), #ffffff00);
+  /* background-color: var(--primaryColor); */
+  /* border-bottom: 1px solid var(--secondaryColor); */
+}
+
 h3 {
   margin-block-end: 0;
   margin-block-start: 0;
@@ -49,25 +61,19 @@ h3 {
 
 nav {
   display: flex;
-  position: sticky;
   width: 100%;
-  top: 0;
-  z-index: 50;
   justify-content: end;
   text-align: center;
   align-items: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.651), #ffffff00);
-  
-  /* background-color: var(--primaryColor); */
-  /* border-bottom: 1px solid var(--secondaryColor); */
 }
 
-nav h1 {
+header h1 {
   margin-right: auto;
   margin-left: 2rem;
   font-weight: 400;
+  font-size: 26px;
 }
-nav h1:hover {
+header h1:hover {
   cursor: pointer;
   animation: header-hover 1000ms infinite;
 }
@@ -86,10 +92,23 @@ nav a {
   font-weight: 300;
   color: var(--textColor);
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 nav a:hover {
   color: var(--secondaryColor);
+}
+
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 19px;
 }
 
 .wrapper {
@@ -202,7 +221,42 @@ footer {
 
 
 
-@media only screen and (max-width: var(--laptopBP)) {
+@media only screen and (max-width: 1024px) {
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: var(--primaryColor);
+    transition: 0.2s;
+    transform: translateY(-100vh);
+  }
+
+  nav a {
+    border-bottom: 1px solid var(--secondaryColor);
+  }
+
+
+  .responsive-nav {
+    transform: none;
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
 
 }
 

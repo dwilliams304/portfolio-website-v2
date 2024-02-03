@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { headers } from "../../data/RandomHeaders";
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function NavBar(){
     const [headerText, setHeaderText] = useState('daviswilliams');
@@ -16,22 +17,22 @@ export default function NavBar(){
 
     return(
         <header>
+            <h1 onClick={changeText}>{headerText}.<span className="highlight">dev</span></h1>
             <nav ref={navRef}>
-                <h1 onClick={changeText}>{headerText}.<span className="highlight">dev</span></h1>
 
 
-                <a className="fancy-underline" href="#home">Home</a>
-                <a className="fancy-underline" href="#about">About</a>
-                <a className="fancy-underline" href="#projects">Projects</a>
-                <a className="fancy-underline" href="#contact">Contact</a>
+                <a onClick={showMobileNav} className="fancy-underline" href="#home">Home</a>
+                <a onClick={showMobileNav} className="fancy-underline" href="#about">About</a>
+                <a onClick={showMobileNav} className="fancy-underline" href="#projects">Projects</a>
+                <a onClick={showMobileNav} className="fancy-underline" href="#contact">Contact</a>
 
 
-                <button className="nav-btn close-nav-btn">
-
+                <button onClick={showMobileNav} className="nav-btn close-nav-btn">
+                    <FaTimes />
                 </button>
             </nav>
-            <button className="nav-btn">
-
+            <button onClick={showMobileNav} className="nav-btn">
+                <FaBars />
             </button>
         </header>
     )
