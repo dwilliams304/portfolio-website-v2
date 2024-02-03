@@ -68,7 +68,7 @@ export default function Contact(){
         e.preventDefault();
         setSuccess(false);
         if(checkValidForm()){
-            emailjs.sendForm(import.meta.env.VITE_EMAIL_ID, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_PUBLIC_KEY)
+            emailjs.sendForm(import.meta.env.VITE_EMAIL_ID, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_PUBLIC)
                 .then(res => {
                     setFormValues(initialValues);
                     setErrors({});
@@ -124,7 +124,7 @@ export default function Contact(){
                 {errors.message && <span className="error">{errors.message}</span>}
                 <span className="char-count">{charCount}/500</span>
 
-                <ReCAPTCHA ref={recaptcha} sitekey={import.meta.env.VITE_SITE_KEY} className="captcha" />
+                <ReCAPTCHA ref={recaptcha} sitekey={import.meta.env.VITE_SITE} className="captcha" />
                 {errors.captcha && <span className="error">{errors.captcha}</span>}
 
                 <button type="submit" className="btn-fancy">Send!</button>
