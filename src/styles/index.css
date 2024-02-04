@@ -140,6 +140,7 @@ nav a:hover {
   z-index: 1;
   padding: 1rem 3rem;
   background-color: var(--primaryColor);
+  color: var(--textColor);
   border: 1px solid var(--secondaryColor);
   cursor: pointer;
 
@@ -264,7 +265,14 @@ footer {
 
 }
 
-@media only screen and (max-width: var(--mobileBP)) {
+@media only screen and (max-width: 480px) {
+  header h1 {
+    margin-left: 1rem;
+    font-size: 22px;
+  }
 
+  .open-nav-btn {
+    margin-right: 1rem;
+  }
 }
 

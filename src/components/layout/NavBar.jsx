@@ -31,7 +31,7 @@ export default function NavBar(){
                     <FaTimes />
                 </button>
             </nav>
-            <button onClick={showMobileNav} className="nav-btn">
+            <button onClick={showMobileNav} className="nav-btn open-nav-btn">
                 <FaBars />
             </button>
         </header>

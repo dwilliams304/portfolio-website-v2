@@ -35,7 +35,7 @@
 }
 
 .card {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     position: relative;
     z-index: 1;
     background-color: var(--primaryColor);
