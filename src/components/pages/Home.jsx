@@ -1,7 +1,7 @@
 /* eslint-disable */
 import "../../styles/section-styles/home.css";
 import { iconMap } from "../../data/iconMap";
-import Coin from "../../../src/assets/imgs/coin.jpg"
+import Coin from "../../../src/assets/imgs/coin.jpg";
 
 export default function Home(){
     const lang = [
@@ -44,13 +44,16 @@ export default function Home(){
             <h2>My name is <span className="highlight">Davis</span></h2>
             <div className="details">
                 <div>
-                    <h4>I'm a Fullstack Developer based out of Tucson, AZ.</h4>
-                    <p>Welcome to my portfolio! Here you can view some information about me, as well as information about some of the projects I've worked on.
-                        Want to connect? Send an email!
-                    </p>
+                    <h4>I'm a Fullstack Developer based out of Greenville, SC.</h4>
+                    <p>Welcome to my portfolio! Here you can view some information about me, as well as information about some of the projects I've worked on.</p>
+                    <div style={{display: "flex"}}>
+                        <span onClick={() => window.open("https://github.com/dwilliams304")}>{iconMap["GitHub"]}</span>
+                        <span onClick={() => window.open("https://www.linkedin.com/in/daviswilliams304/")}>{iconMap["LinkedIn"]}</span>
+                    </div>
                 </div>
                 <img className="img-coin" src={Coin} alt="headshot"/>
             </div>
+            <a href="#contact" className="btn-fancy" style={{textDecoration: "none", marginBottom: "2rem"}}>Want to connect?</a>
             <h2>My <span className="highlight">skills:</span></h2>
             <div className="tech">
                 <div className="skills">

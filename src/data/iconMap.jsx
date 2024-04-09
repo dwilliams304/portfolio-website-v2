@@ -40,8 +40,8 @@ export const iconMap = {
     "Git": <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>,
 
     //Web Icons
-    "LinkedIn": <img src={LinkedIn} alt="linkedin" width="50" height="50"/>,
-    "GitHub": <img src={GitHub} alt="github" width="50" height="50"/>,
+    "LinkedIn": <img className="social-icn" src={LinkedIn} alt="linkedin" width="30" height="50"/>,
+    "GitHub": <img className="social-icn" src={GitHub} alt="github" width="50" height="50"/>,
 }
 
 // This file is to help me use icons based off of a string, using FontAwesome icons where applicable

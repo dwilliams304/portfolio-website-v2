@@ -14,14 +14,14 @@ div.details div {
 }
 
 
-div.details img {
+.img-coin {
     border-radius: 50%;
     border: 2px solid var(--secondaryColor);
     width: 200px;
     height: 200px;
     animation: coin-hover 5000ms infinite;
 }
-div.details img:hover {
+.img-coin:hover {
     animation: coin-flip 2500ms infinite;
 }
     
