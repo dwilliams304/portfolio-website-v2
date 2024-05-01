@@ -138,7 +138,7 @@ nav a:hover {
 
   position: relative;
   z-index: 1;
-  padding: 1rem 3rem;
+  padding: 1rem 3em;
   background-color: var(--primaryColor);
   color: var(--textColor);
   border: 1px solid var(--secondaryColor);

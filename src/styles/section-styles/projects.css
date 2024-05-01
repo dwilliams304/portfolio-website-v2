@@ -1,37 +1,17 @@
 .projects > h4 {
     font-weight: 300;
 }
-.carousel {
-    max-width: 100%;
-
-    display: grid;
-    gap: 1rem;
-    grid-auto-flow: column;
-    grid-auto-columns: 25%;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-
-    scroll-snap-type: inline mandatory;
-    scroll-padding-inline: 1rem;
-
-    padding-bottom: 185px;
-    margin: 0 1rem;
-
-    scrollbar-width: thin;
-    scrollbar-color: var(--secondaryColor) var(--primaryColor);
-
+.carousel-container {
+    width: 95%;
+    padding-bottom: 15rem;
+    margin: auto;
 }
-
-.carousel::-webkit-scrollbar {
-    height: 5px;
-    background-color: white;
-}
-.carousel::-webkit-scrollbar-track {
+.carousel-dots .react-multi-carousel-dot button{
+    border-color: var(--primaryColor);
     background: var(--primaryColor);
-    
 }
-.carousel::-webkit-scrollbar-thumb {
-    background-color: var(--secondaryColor);
+.carousel-dots .react-multi-carousel-dot--active button {
+    background: var(--secondaryColor);
 }
 
 .card {
@@ -43,7 +23,8 @@
 
     padding: 3rem 2rem;
 
-    /* min-width: 30%; */
+    min-width: 65%;
+    max-width: 80%;
     min-height: 400px;
     height: 50vh;
     text-wrap: wrap;
@@ -69,7 +50,8 @@
 .btn-container {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    padding-top: 1rem;
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
@@ -112,23 +94,4 @@
 .card:hover .bottom-face,
 .card:focus .bottom-face {
     transform: translateY(0px);
-}
-
-
-
-
-@media only screen and (max-width: 1300px) {
-    .carousel {
-        grid-auto-columns: 34%;
-    }
-}
-@media only screen and (max-width: 950px) {
-    .carousel {
-        grid-auto-columns: 52%;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .carousel {
-        grid-auto-columns: 88%;
-    }
 }
